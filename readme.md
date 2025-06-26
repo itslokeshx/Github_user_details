@@ -1,1 +1,1 @@
-Site_Link: Site link: "https://itslokeshx.github.io/Github_user_details/"
+Site_Link:"https://itslokeshx.github.io/Github_user_details/"
