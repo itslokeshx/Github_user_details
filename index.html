@@ -5,18 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GitHub User Finder</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
   <div class="container">
     <h1>GitHub User Lookup</h1>
+
     <div class="search-box">
       <input type="text" id="username" placeholder="Enter GitHub username" />
       <button onclick="getUser()">Search</button>
     </div>
-    <div id="result"></div>
+
+    <div class="user-card hidden" id="userCard">
+      <div class="user-header">
+        <img id="avatar" src="" alt="Profile" />
+        <div class="user-meta">
+          <h2 id="login">Username</h2>
+          <div class="bio" id="bio">User bio will be shown here.</div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div>Followers: <span id="followers">0</span></div>
+        <div>Following: <span id="following">0</span></div>
+      </div>
+
+      <div class="repos">
+        <h3>Public Repos</h3>
+        <ul id="repoList">
+         
+        </ul>
+      </div>
+    </div>
+
+    <p id="error" class="error-msg"></p>
   </div>
 
   <script src="main.js"></script>
